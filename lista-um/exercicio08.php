@@ -5,16 +5,13 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    function media($n1, $n2, $n3) {
+    return ($n1 + $n2 + $n3) / 3;
+}
+
+    echo "a média é: " . media(10, 20, 30) . "br";
+    ?>
     
 </body>
 </html>
-
-
-<?php
-function contagemRegressiva($numero) {
-    $numero = '10';
-    while ($numero >= '1') {
-    echo $numero;
-    }
-}
-?>

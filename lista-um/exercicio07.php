@@ -5,16 +5,17 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php
+function mensagemPersonalizada($nome, $mensagem = 'Olá!') {
+    echo $mensagem ;
+    echo $nome;
+}
+
+mensagemPersonalizada('Ana');
+mensagemPersonalizada('Lucas', 'Oi');
+?>
     
 </body>
 </html>
 
-
-<?php
-function contagemRegressiva($numero) {
-    $numero = '10';
-    while ($numero >= '1') {
-    echo $numero;
-    }
-}
-?>

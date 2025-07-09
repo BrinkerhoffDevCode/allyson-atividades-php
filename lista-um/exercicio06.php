@@ -5,16 +5,16 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    const $carro = {
+    $marca: 'Toyota';
+    $modelo: 'Corolla';
+    $ano: '2020';
+    };
+
+    echo 'carro.modelo';
+
+    ?>
     
 </body>
 </html>
-
-
-<?php
-function contagemRegressiva($numero) {
-    $numero = '10';
-    while ($numero >= '1') {
-    echo $numero;
-    }
-}
-?>

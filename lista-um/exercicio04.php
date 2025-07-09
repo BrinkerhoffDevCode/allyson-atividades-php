@@ -5,16 +5,17 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php
+function inverterTexto() {
+    $texto = prompt('digite uma palavra');
+    return $texto.split('').reverse().join('');
+}
+
+inverterTexto();
+
+?>
     
 </body>
 </html>
 
-
-<?php
-function contagemRegressiva($numero) {
-    $numero = '10';
-    while ($numero >= '1') {
-    echo $numero;
-    }
-}
-?>

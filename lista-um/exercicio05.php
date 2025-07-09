@@ -5,16 +5,14 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+function contarCaracteres($texto) {
+    echo $texto.lengt;
+    return 0;
+}
+
+contarCaracteres('arma');
+?>
     
 </body>
 </html>
-
-
-<?php
-function contagemRegressiva($numero) {
-    $numero = '10';
-    while ($numero >= '1') {
-    echo $numero;
-    }
-}
-?>
