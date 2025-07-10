@@ -6,14 +6,11 @@
 </head>
 <body>
     <?php
-    function verificarPalindromo($palavra) {
-    $palavraInvertida = strrev($palavra);
-    return $palavra === $palavraInvertida;
+    function inverterTexto() {
+    $texto = prompt('digite uma palavra');
+    return $texto.split('').reverse().join('');
 }
-
-    echo (verificarPalindromo("arara")); // true
-    // false
-?>
     ?>
+    
 </body>
 </html>

@@ -11,7 +11,7 @@
     echo $numero;
 
     function VerificarPar($numero){
-        if($numero % 2 === 0){  
+        if($numero % '2' === '0'){  
              echo 'par';
         }else{
             echo 'impar';
@@ -19,8 +19,8 @@
 
     };
 
-    VerificarPar(4);
-    VerificarPar(10);
+    VerificarPar('4');
+    VerificarPar('10');
 
 
     ?>

@@ -6,14 +6,16 @@
 </head>
 <body>
     <?php
-    function verificarPalindromo($palavra) {
-    $palavraInvertida = strrev($palavra);
-    return $palavra === $palavraInvertida;
+    function verificarSinal($numero) {
+    if ($numero > '0') {
+        echo 'Positivo';
+    } else if ($numero < '0') {
+        echo 'Negativo';
+    } else {
+        echo 'Neutro';
+    }
 }
-
-    echo (verificarPalindromo("arara")); // true
-    // false
-?>
     ?>
+    
 </body>
 </html>

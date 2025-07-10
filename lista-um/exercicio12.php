@@ -6,14 +6,9 @@
 </head>
 <body>
     <?php
-    function verificarPalindromo($palavra) {
-    $palavraInvertida = strrev($palavra);
-    return $palavra === $palavraInvertida;
+    function converterTemperatura($celsius) {
+    return ($celsius * '9 '/' 5') + '32';
 }
-
-    echo (verificarPalindromo("arara")); // true
-    // false
-?>
     ?>
 </body>
 </html>

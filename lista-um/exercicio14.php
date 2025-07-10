@@ -6,14 +6,15 @@
 </head>
 <body>
     <?php
-    function verificarPalindromo($palavra) {
-    $palavraInvertida = strrev($palavra);
-    return $palavra === $palavraInvertida;
-}
+   
+   $altura = '1.75';
+   $peso = '70';
 
-    echo (verificarPalindromo("arara")); // true
-    // false
-?>
+    function calcularIMC($peso, $altura) {
+         $imc = $peso / ($altura * $altura);
+         return round($imc, 2);
+    }
+
     ?>
 </body>
 </html>
