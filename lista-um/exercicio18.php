@@ -6,10 +6,15 @@
 </head>
 <body>
     <?php
-    $celsius = '25';
-    function converterTemperatura($celsius) {
-    return ($celsius * '9 / 5') + '32';
-}
+    $senha = '123';
+
+    function verificarSenha($senha){
+        if ($senha == '123'){
+            return 'Acesso permitido';
+        } else {
+            return 'acesso negado';
+        }
+    }
     ?>
 </body>
 </html>

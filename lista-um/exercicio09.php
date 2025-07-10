@@ -6,17 +6,16 @@
 </head>
 <body>
 <?php
-    function multiplosTres() {
-    for $i = 1; $i <= 20; $i++) {
-        if (i % 3 === 0) {
-            echo $i: 'Múltiplo de 3';
-        } else {
-            echo $i: 'Não múltiplo de 3';
-        }
-    }
-}
+    $num1 = '9';
+    $num2 = '6';
 
-multiplosTres();
+    function somaNumeros($num1, $num2){
+        $soma = $num1 + $num2;
+        return $soma;
+    }
+
+    $resultado = somaNumeros($num1, $num2);
+    echo "A soma de $num1 e $num2 é: $resultado";
 ?>
     
 </body>

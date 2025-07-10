@@ -9,17 +9,16 @@
 </body>
 </html>
 <?php
-    function Calcular($n1, $n2) {
-    const $soma = $n1 + $n2;
-    const $subtracao = $n1 - $n2;
-    const $divisao = $n2 !== 0 ? $n1 / $n2 : 'Não pode dividir por zero';
-    const $multiplicacao = $n1 * $n2;
-    };
+    $numero = '1';
 
-    echo 'soma';
-    echo 'subtracao';
-    echo 'divisao';
-    echo 'multiplicacao';
+    function calcularTabuadaNumero($numero){
+        $resultado = '';
+        for ($i = 1; $i <= 10; $i++) {
+            $resultado .= "$numero x $i = " .($numero *$i) ."<br>";
+            return $resultado;
+        }
+        
+    }
 
 
 ?>

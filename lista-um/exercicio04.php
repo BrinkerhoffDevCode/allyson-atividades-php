@@ -7,12 +7,21 @@
 <body>
 
 <?php
-function inverterTexto() {
-    $texto = prompt('digite uma palavra');
-    return $texto.split('').reverse().join('');
-}
+$numero = '5';
 
-inverterTexto();
+function calcularFatorial($numero){
+    if ($numero < 0){
+        return 'Fatorial não é definido para números negativos.';
+    } else if($numero === '0'){
+        return 'O fatorial de 0 é 1.';
+    } else {
+        $fatorial = 1;
+        for ($i = 1; $i <= $numero; $i++) {
+            $fatorial *= $i;
+        }
+        return 'O fatorial de ' . $numero . ' é ' . $fatorial . '.';
+    }
+}
 
 ?>
     

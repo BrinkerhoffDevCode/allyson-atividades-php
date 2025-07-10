@@ -6,10 +6,16 @@
 </head>
 <body>
     <?php
-    function inverterTexto() {
-    $texto = prompt('digite uma palavra');
-    return $texto.split('').reverse().join('');
-}
+    $nome = 'Allyson';
+    $idade = '17';
+
+    function informarPessoa ($nome,$idade) {
+         $informacao = "Meu nome é $nome e tenho $idade anos.";
+         return $informacao;
+    }
+
+    echo informarPessoa($nome, $idade);
+
     ?>
     
 </body>

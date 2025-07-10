@@ -9,12 +9,17 @@
 </body>
 </html>
 
-
 <?php
-function contagemRegressiva($numero) {
     $numero = '10';
-    while ($numero >= '1') {
-    echo $numero;
-    }
+
+    function informaNumero($numero){
+        if($numero > 0){
+            return "O numero é positivo";
+        } elseif($numero < 0){
+            return "O numero é negativo";
+        } else {
+            return "O numero é zero";
+        }
 }
+
 ?>

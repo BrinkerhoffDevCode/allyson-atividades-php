@@ -6,13 +6,28 @@
 </head>
 <body>
 <?php
-function contarCaracteres($texto) {
-    echo $texto.lengt;
-    return 0;
-}
+$num2 = '6';
+$num2 = '9';
 
-contarCaracteres('arma');
+function numeroAmigo($num1, $num2){
+    $somaDivisoresNum1 = 0;
+    $somaDivisoresNum2 = 0;
+
+    for ($i = 1; $i < $num1; $i++) {
+        if ($num1 % $i === 0) {
+            $somaDivisoresNum1 += $i;
+        }
+    }
+
+    for ($i = 1; $i < $num2; $i++) {
+        if ($num2 % $i === 0) {
+            $somaDivisoresNum2 += $i;
+        }
+    }
+
+    return $somaDivisoresNum1 === $num2 && $somaDivisoresNum2 === $num1;
+}
 ?>
-    
+  
 </body>
 </html>

@@ -6,13 +6,19 @@
 </head>
 <body>
     <?php
-    const $carro = {
-    $marca: 'Toyota';
-    $modelo: 'Corolla';
-    $ano: '2020';
-    };
 
-    echo 'carro.modelo';
+   $numero = '73';
+
+   function exibirDivisores($numero){
+         $resultado = '';
+         for ($i = '1'; $i <= $numero / '2'; $i++) {
+                if ($numero % $i === '0'){
+                    $resultado .= "$i é divisor de $numero <br>";
+                }
+         }
+         return $resultado;
+   }
+
 
     ?>
     
