@@ -5,7 +5,20 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+
+    $senha = '123';
     
+      function verificarSenha($senha){
+        if ($senha == '123'){
+            return 'Acesso permitido';
+        } else {
+            return 'acesso negado';
+        }
+    }
+    ?>
+
+    ?>
     
 </body>
 </html>

@@ -7,13 +7,16 @@
 <body>
 
 <?php
-function mensagemPersonalizada($nome, $mensagem = 'Olá!') {
-    echo $mensagem ;
-    echo $nome;
+
+$num = '1';
+$num2 = '3';
+$num3 = '7';
+
+function numeroPares($num,$num2,$num3){
+    if ()
+
 }
 
-mensagemPersonalizada('Ana');
-mensagemPersonalizada('Lucas', 'Oi');
 ?>
     
 </body>

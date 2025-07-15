@@ -6,15 +6,23 @@
 </head>
 <body>
     <?php
-    $senha = '123';
+    
 
-    function verificarSenha($senha){
-        if ($senha == '123'){
-            return 'Acesso permitido';
+    $num1 = '7';
+    $num2 = '7';
+    $num3 = '7';
+
+    function qualNumeroMaior($num1, $num2, $num3) {
+        if ($num1 > $num2 && $num1 > $num3) {
+            return $num1;
+        } elseif ($num2 > $num1 && $num2 > $num3) {
+            return $num2;
         } else {
-            return 'acesso negado';
+            return $num3;
         }
     }
     ?>
+
+  
 </body>
 </html>
