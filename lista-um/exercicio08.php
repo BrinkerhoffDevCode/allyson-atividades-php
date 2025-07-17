@@ -8,24 +8,44 @@
 
 <body>
 
-    <form method="POST" action="">
-        <label for="numero">Digite um número:</label>
-        <input type="number" id="numero" name="numero" required>
-        <button type="submit" name="soma_divisores">Verificar</button>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero" name="numero" required>
+    <button type="submit" name="verificar_numero_perfeito">Verificar</button>
     </form>
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['soma_divisores'])) { {
-                $n = $_POST['numero'];
-                echo ($n1 + $n2 + $n3) / 3;
-                }
+        if (isset($_POST['soma_divisores'])) { 
 
-                echo "a média é: " . media(10, 20, 30) . "<br>";
+             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['soma_divisores'])) { {
+                $n1 = $_POST['numero'];
+                $n2 = $_POST['numero'];
+                $n3 = $_POST['numero'];{
+                $media = ($n1 + $n2 + $n3) / 3;
+                }
             }
         }
-    ?>
+    }
+    
+    echo "a média é:  $media  <br>";
 
+        }
+    }
+
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['verificar_numero_perfeito'])) { {
+                $num1 = $_POST['numero'];
+                $num2 = $_POST['numero']; {
+                    $soma = $num1 + $num2;
+                }
+            }
+        }
+        echo "A soma é: " $resultado;
+    }
+
+    ?>
 </body>
 
 </html>

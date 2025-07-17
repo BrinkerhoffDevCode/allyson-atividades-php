@@ -14,10 +14,10 @@
     </form>
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['verificar_numero_perfeito'])) { {
+        if (isset($_POST['palavra-invertida'])) { {
                 $palavra = $_POST['numero']; { {
-                        $palavraInvertida = strrev($palavra);
-                        return $palavra === $palavraInvertida;
+                        $palavraInvertida = 'strrev'($palavra);
+                        echo $palavra === $palavraInvertida;
                     }
                 }
             }

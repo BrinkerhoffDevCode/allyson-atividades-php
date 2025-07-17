@@ -15,17 +15,40 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['verificar_numero_perfeito'])) { {
-                $numero = $_POST['numero']; {
+                $num1 = $_POST['numero'];
+                $num2 = $_POST['numero']; {
                     $soma = $num1 + $num2;
-                    echo "$soma";
+                }
+            }
+        }
+        echo "A soma é: " $resultado;
+    }
+
+    ?>
+
+
+ <form method="POST" action="">
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero" name="numero" required>
+        <button type="submit" name="soma_divisores">Verificar</button>
+    </form>
+
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['soma_divisores'])) { {
+
+             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['soma_divisores'])) { {
+                $n1 = $_POST['numero'];
+                $n2 = $_POST['numero'];
+                $n3 = $_POST['numero'];{
+                $media = ($n1 + $n2 + $n3) / 3;
                 }
             }
         }
     }
-
-    echo "A soma de $num1 e $num2 é: $resultado";
-    ?>
-
+    
+    echo "a média é:  $media  <br>";
 </body>
 
 </html>
